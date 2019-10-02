@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Spyro's Jem Collector</title>
+        
+        <!--Reset CSS stylesheet-->
+        <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+
+        <!--Bootstrap CSS CDN-->
+        <link 
+        rel="stylesheet" 
+        href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" 
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" 
+        crossorigin="anonymous">
+
+        <!--Custom CSS stylesheet-->
+        <link rel="stylesheet" type="text/css" href="assets/css/style.css">  
+         
+        <!--JQuery/Javascript sheet-->
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    </head>
+
+    <body>
+        <!--Title-->
+        <header class="fixed-top">
+            <div class="container-fluid">
+                <div class="row 1"> 
+                    <div class="col">
+                        <h1>Spyro's Jem Collector</h1>
+                    </div>
+                    <div class="col">
+                            <ul class="nav">
+                                    <li class="nav-item">
+                                        <a class="nav-link active" href="#">Home</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="birthday_plans.html">Reset</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="rsvp.html">About</a>
+                                    </li>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <!--This is a blank medium sized block container-->
+            <div>
+                <div class="row">
+                    <div class="col block-md">
+                    </div>
+                    <div class="col block-md">
+                    </div>
+                </div>
+            </div>
+
+
+
+
+            <!--Instructions section-->
+        
+            
+            <div class="row visable">
+                <div class="instructions-container">
+                    <div class="col">
+                        <h2>How to play:</h2>
+                        <br>
+                        <p>
+                            Welcome visitor! If you are a long-time gamer than you should be familiar with the infamous purple dragon "Spyro"! The series first hit the gaming market in 1996 
+                            and was a best seller. Those who are or aren't familiar with the traditional game, you must collect the gems or crystals in order to level up throughout the game. In
+                            this game we made it simple for you. A random number will be generated and you have to select the right sequence of jewels to equal the random number. Remember the jewel
+                            values change randomly too! You will have Chose from them to win. This basic test game may seem simple but be careful it is very challenging.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        
+             <!--This is a small sized blank block container-->
+            <div>
+                <div class="row">
+                    <div class="col block-sm">
+                    </div>
+                    <div class="col block-sm">
+                    </div>
+                </div>
+            </div>
+
+
+            <!--Random number container-->
+            <div class="row">
+                    <div class="col justify-content-center random-number-container">
+                        <div class="random-number" id="randNum"></div>
+                    </div> 
+                    <div class="col justify-content-center crystal-container">
+                        <div id="crystalArray">
+                            <button id="ruby" class="jewel ruby"><img src="assets/images/Red Gem.svg" alt="" style="width: 60px;"></button>
+
+                            <button id="emld" class="jewel emld"><img src="assets/images/Green Gem.svg" alt="" style="width: 60px;"></button>
+
+                            <button id="sapphire" class="jewel sapphire"><img src="assets/images/Sapphire Gem.svg" alt="" style="width: 60px;"></button>
+
+                            <button id="citrine" class="jewel citrine"><img src="assets/images/Yellow Gem.svg" alt="" style="width: 60px;"></button>
+                        </div>
+                    </div>
+            </div>
+            <br><br>
+            <!--Crystal Array-->
+           
+            <!--This is a small sized blank block container-->
+            <div>
+                    <div class="row">
+                        <div class="col block-sm">
+                        </div>
+                        <div class="col block-sm">
+                        </div>
+                    </div>
+                </div>
+        
+            <!--Total Score container-->
+            <div class="row mx-auto overall-score-container"> 
+                    <div class="col-1 justify-text total-score">
+                        <h3 class="mx-auto">Your score:</h3>
+                        <h3 id="totalScore">0</h3>
+                    </div>
+            </div>
+
+            <!--W/L container-->
+            <div class="row">
+                <div class="col wins">
+                        <p>Wins:</p>
+                        <p id="wins">0</p>
+                </div>
+
+                <div class="col losses">
+                    <p>Losses:</p>
+                    <p id="losses">0</p>
+                </div>
+            </div>
+        
+        </main>
+
+        <!--Footer section-->
+        <footer>
+            <div class="row">
+                <div class="col">
+                       <!--Facebook link-->
+                       <img class="socialmedia" rel="" src="assets/images/Facebook.svg" alt="Facebook" style="width: 60px;">
+                       <!--Instagram link-->
+                       <img class="socialmedia" rel="" src="assets/images/Instagram.svg" alt="Instagram" style="width: 60px;">
+                       <!--Twitter Link-->
+                       <img class="socialmedia" rel="" src="assets/images/Twitter.svg" alt="Twitter" style="width: 60px;">
+                </div>
+                <div class="col">
+                    <P>
+                        Property of BXXDY BAGZ LLC
+                    </p>
+                </div>
+                <div class="col">
+                    <p>
+                        More games!
+                    </p>
+                </div>
+            </div>
+        </footer>
+
+    <script type="text/javascript" src="assets/javascript/game.js"></script>
+    </body>
+    </html>

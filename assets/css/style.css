@@ -1,0 +1,230 @@
+* {
+margin: 0px;
+padding: 0px;
+}
+
+html {
+background: url("../images/Spyro Wallpaper.jpg") no-repeat center center fixed;
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+background-size: cover;
+}
+
+
+body {
+    background-color: transparent;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+/*Header properties*/
+.container-fluid {
+        position: fixed;
+        background: white;
+        width: 100%;
+        margin-top: 30px;
+        margin-bottom: 15%;
+        padding-top: .5%;
+        padding-bottom: .5%;
+        height: auto;
+        border-bottom-width: 10px;
+        border-bottom: solid #F8D8C8;
+        clear: both;
+     }
+
+     h1 {
+        font-family: 'Luckiest Guy', cursive;
+        font-size: 280%; 
+        text-shadow:
+		-1px -1px 0 #FEF8EF,
+		1px -1px 0 #E7CB7D,
+		-1px 1px 0 #E7CB7D,
+		1px 1px 0 #E7CB7D;
+     }
+    /*child header css properties*/
+        .col {
+                float: left;
+                clear: left;
+                padding-top: 20px;
+            }
+        
+        .nav {
+            padding-top: 0px;
+            margin-left: 40%;
+        }
+
+        a {
+            color: #5A388D;
+        }
+
+
+/*These are the blank blocks*/
+.block-sm {
+        position: static;
+        width: 100%;
+        height: auto;
+        padding-top: 4%;
+        padding-bottom: 4%;
+        clear: none;
+}
+
+/*These are the blank blocks*/
+.block-md {
+        position: static;
+        width: 100%;
+        height: auto;
+        padding-top: 15%;
+        padding-top: 15%;
+        clear: none;
+}
+
+
+/*This is the instructions blocks*/
+.instructions-container {
+        position: static;
+        float: right;
+        margin-left: 55%;
+        top: 150px;
+        width: 40%;
+        height: 41%;
+        padding-left: 1%;
+        padding-right: 1%; 
+        padding-bottom: 5%;
+        border-bottom: solid 5%;
+        background: white;
+        border-bottom-width: 25px;
+        border-bottom: solid #5A388D;
+        text-align: justify;
+        z-index: 1;
+}
+
+
+.random-number-container {
+        background-image: url("../images/Wood Sign 1.svg");
+        background-repeat: no-repeat;
+        background-position-x: center;
+        position: static;
+        width: 5%;
+        height: 5%;
+        padding: 0% 5% 5% 0%;
+        text-align: center;
+        background-color: transparent;
+        font-size: 4em;
+}
+    .random-number{
+        padding-left: 14%;
+        padding-top: 0%;
+        color: white;
+    }
+
+.crystal-container {
+        background-image: url("../images/Wood Sign 2.svg");
+        background-repeat: no-repeat;
+        background-position-x: center;
+        position: static;
+        width: 25%;
+        height: 25%;
+        padding: 1% 0% 3.5% 1%;
+        text-align: center;
+        background-color: transparent;
+        font-size: 4em;
+        object-fit: contain;
+}
+
+        .jewel {
+                padding: 0;
+                border: none;
+                background-color: transparent;
+        }
+
+
+.overall-score-container{
+        background-image: url("../images/Wood Sign 3.svg");
+        background-repeat: no-repeat;
+        background-position-x: center;
+        background-size: 100%;
+        position: static;
+        width: 5%;
+        height: 5%;
+        padding: 6% 10% 10% 10%;
+        background-color: transparent;
+}
+
+    .total-score {
+        text-emphasis: center;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        width: 8em;
+        color: gold;
+        object-fit: contain;
+    }
+
+        .h3{
+                position: fixed;
+                text-align: center;
+                padding-left: 0;
+        }
+
+.wins{
+        margin-left: 5%;
+        width: 30%;
+        height: 41%;
+        margin-left: 10%;
+        margin-right: 10%;
+        border-bottom: solid 5%;
+        background: white;
+        border-bottom-width: 25px;
+        border-bottom: solid #5A388D;
+        text-align: center;
+}
+
+.losses{
+        margin-left: 5%;
+        width: 30%;
+        height: 41%;
+        margin-left: 10%;
+        margin-right: 10%;
+        border-bottom: solid 5%;
+        background: grey;
+        border-bottom-width: 25px;
+        border-bottom: solid #5A388D;
+        text-align: center;
+        font-weight: 500;
+}
+
+/*Visibility section*/
+section {
+        opacity: 0;
+        transition: opacity 1s;
+        }
+        
+        section.visible { 
+        opacity: 1;
+        }
+
+footer {
+        position: relative;
+        background: #E7CB7D;
+        width: 100%;
+        margin-top: 40px;
+        margin-right: 0;
+        margin-left: 0;
+        padding-top: .25%;
+        padding-bottom: .25%;
+        padding-left: 0;
+        padding-right: 0;
+        height: auto;
+        border-bottom-width: 10px;
+        border-bottom: solid #F8D8C8;
+        bottom: 0;
+}
+
+.socialmedia{
+    padding-left: 5%;
+    width: 100%;
+    height: 100%;
+}
+
+@media all and (min-width: 1000px) {  body  { font-size:14px;  } }
