@@ -4,7 +4,7 @@
 
     <head>
         <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <title>Spyro's Jem Collector</title>
         
         <!--Reset CSS stylesheet-->
@@ -51,6 +51,9 @@
         </header>
 
         <main>
+            <audio class="song" id="song" controls preload="none"> 
+                        <source src="assets/media/Spyro One Theme.mp3" type="audio/mpeg">
+            </audio>
             <!--This is a blank medium sized block container-->
             <div>
                 <div class="row">
@@ -125,22 +128,22 @@
         
             <!--Total Score container-->
             <div class="row mx-auto overall-score-container"> 
-                    <div class="col-1 justify-text total-score">
-                        <h3 class="mx-auto">Your score:</h3>
-                        <h3 id="totalScore">0</h3>
+                    <div class="col-1 total-score">
+                        <h3 class="text-center">Your score:</h3>
+                        <h3 class="text-center" id="totalScore">0</h3>
                     </div>
             </div>
 
             <!--W/L container-->
             <div class="row">
                 <div class="col wins">
-                        <p>Wins:</p>
-                        <p id="wins">0</p>
+                        <p><b>Wins:</b></p>
+                        <p id="wins"><b>0</b></p>
                 </div>
 
                 <div class="col losses">
-                    <p>Losses:</p>
-                    <p id="losses">0</p>
+                    <p><b>Losses:</b></p>
+                    <p id="losses"><b>0</b></p>
                 </div>
             </div>
         

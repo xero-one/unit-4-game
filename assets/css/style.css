@@ -79,6 +79,9 @@ body {
         clear: none;
 }
 
+.song{
+        display: none;
+}
 
 /*This is the instructions blocks*/
 .instructions-container {
@@ -141,30 +144,30 @@ body {
 
 .overall-score-container{
         background-image: url("../images/Wood Sign 3.svg");
+        background-color: white;
         background-repeat: no-repeat;
         background-position-x: center;
-        background-size: 100%;
-        position: static;
+        background-size:100% 100%;
+        position: relative;
         width: 5%;
         height: 5%;
         padding: 6% 10% 10% 10%;
         background-color: transparent;
+        box-sizing: unset;
+        overflow: hidden;
 }
 
     .total-score {
-        text-emphasis: center;
         margin-left: auto;
         margin-right: auto;
-        text-align: center;
         width: 8em;
         color: gold;
         object-fit: contain;
     }
 
         .h3{
-                position: fixed;
-                text-align: center;
                 padding-left: 0;
+                margin: 0% 5% 50% 5%;
         }
 
 .wins{
@@ -178,6 +181,7 @@ body {
         border-bottom-width: 25px;
         border-bottom: solid #5A388D;
         text-align: center;
+        font-size: 18px;
 }
 
 .losses{
@@ -191,7 +195,7 @@ body {
         border-bottom-width: 25px;
         border-bottom: solid #5A388D;
         text-align: center;
-        font-weight: 500;
+        font-size: 18px;
 }
 
 /*Visibility section*/
@@ -226,5 +230,33 @@ footer {
     width: 100%;
     height: 100%;
 }
+
+@media screen
+  and (min-width: 0px) 
+  and (max-width: 980px) 
+  and (-webkit-min-device-pixel-ratio: 1)
+  
+  {
+    #mypic {
+        width: 100%;
+        height: auto;
+        display: block;
+        float: none;
+        }
+    header {
+        width: 100%;
+    }  
+
+    nav {
+        width: 200px;
+        float: none;
+        display: block;
+        margin: 0;
+    }
+
+    .name {
+        width: 100vm;
+    }
+  }
 
 @media all and (min-width: 1000px) {  body  { font-size:14px;  } }

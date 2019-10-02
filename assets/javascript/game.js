@@ -121,6 +121,24 @@ $(document).ready(() => {
             resetCharacters();
         }
     });
+
+    var song = $('#song')
+
+    result.hide().html('<%= j @song %>').fadeIn(250);
+    playAudio(song);
+    
+    function playAudio(song){
+      if (song.html() === "Yes"){
+    
+        $('#yes-audio').trigger('play')
+      }
+      else if (song.html() === "Nope."){
+        $('#no-audio').trigger('play')
+      }
+     
+    }
+
+
 /*This is the JQuery script to link element fade by scoll*/
     $(document).on("scroll", function () {
         var pageTop = $(document).scrollTop()
