@@ -132,10 +132,11 @@ body {
         background-image: url("../images/Wood Sign 2.svg");
         background-repeat: no-repeat;
         background-position-x: center;
+        background-size: cover;
         position: static;
-        width: 25%;
-        height: 25%;
-        padding: 1% 0% 3.5% 1%;
+        max-width: 100%;
+        max-height: 100%;
+        padding: 10% 0% 10% 0%;
         text-align: center;
         background-color: transparent;
         font-size: 4em;
@@ -146,6 +147,8 @@ body {
                 padding: 0;
                 border: none;
                 background-color: transparent;
+                max-width: 100%;
+                height: auto;
         }
 
 
@@ -156,7 +159,7 @@ body {
         background-position-x: center;
         background-size:100% 100%;
         position: relative;
-        width: 5%;
+        width: 9%;
         height: 5%;
         padding: 6% 10% 10% 10%;
         background-color: transparent;
@@ -168,7 +171,7 @@ body {
         margin-left: auto;
         margin-right: auto;
         width: 8em;
-        color: gold;
+        color: black;
         object-fit: contain;
     }
 
@@ -238,8 +241,8 @@ footer {
 
 .socialmedia{
     padding-left: 5%;
-    width: 100%;
-    height: 100%;
+    max-width: 100%;
+    height: auto;
 }
 
 @media screen
@@ -270,4 +273,218 @@ footer {
     }
   }
 
-@media all and (min-width: 1000px) {  body  { font-size:14px;  } }
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px)  and (-webkit-min-device-pixel-ratio: 1) {
+        html {
+                background: url("../images/Spyro Wallpaper.jpg") no-repeat center center fixed;
+                -webkit-background-size: cover;
+                -moz-background-size: cover;
+                -o-background-size: cover;
+                background-size: cover;
+        }
+
+
+         #mypic {
+                width: 100%;
+                height: auto;
+                display: block;
+                float: none;
+                }
+                
+        header {
+                width: 100%;
+        }  
+            
+        nav {
+                width: 200px;
+                float: none;
+                display: block;
+                margin: 0;
+        }
+            
+        .name {
+                width: 100vm;
+        }
+        
+}
+
+      /* Small devices (portrait tablets and large phones, 600px and up) */
+      @media only screen and (min-width: 600px)  and (-webkit-min-device-pixel-ratio: 1) {
+        html {
+                background: url("../images/Spyro Wallpaper.jpg") no-repeat center center fixed;
+                -webkit-background-size: cover;
+                -moz-background-size: cover;
+                -o-background-size: cover;
+                background-size: cover;
+        }
+
+        .crystal-container {
+                background-image: url("../images/Wood Sign 2.svg");
+                background-repeat: no-repeat;
+                background-position-x: center;
+                background-size: cover;
+                position: static;
+                max-width: 100%;
+                max-height: 100%;
+                padding: 4% 0% 4% 0%;
+                text-align: center;
+                background-color: transparent;
+                font-size: 4em;
+                object-fit: contain;
+        }
+
+         #mypic {
+                width: 100%;
+                height: auto;
+                display: block;
+                float: none;
+                }
+                
+        header {
+                width: 100%;
+        }  
+            
+        nav {
+                width: 200px;
+                float: none;
+                display: block;
+                margin: 0;
+        }
+            
+        .name {
+                width: 100vm;
+        }
+        
+}
+
+      /* Medium devices (landscape tablets, 768px and up) */
+      @media only screen and (min-width: 768px)  and (-webkit-min-device-pixel-ratio: 1) {
+        html {
+                background: url("../images/Spyro Wallpaper.jpg") no-repeat center center fixed;
+                -webkit-background-size: cover;
+                -moz-background-size: cover;
+                -o-background-size: cover;
+                background-size: cover;
+        }
+
+        .crystal-container {
+                background-image: url("../images/Wood Sign 2.svg");
+                background-repeat: no-repeat;
+                background-position-x: center;
+                background-size: cover;
+                position: static;
+                max-width: 100%;
+                max-height: 100%;
+                padding: 4% 0% 4% 0%;
+                text-align: center;
+                background-color: transparent;
+                font-size: 4em;
+                object-fit: contain;
+        }
+
+         #mypic {
+                width: 100%;
+                height: auto;
+                display: block;
+                float: none;
+                }
+                
+        header {
+                width: 100%;
+        }  
+            
+        nav {
+                width: 200px;
+                float: none;
+                display: block;
+                margin: 0;
+        }
+            
+        .name {
+                width: 100vm;
+        }
+        
+}
+
+      /* Large devices (laptops/desktops, 992px and up) */
+      @media only screen and (min-width: 992px)  and (-webkit-min-device-pixel-ratio: 1) {
+        html {
+                background: url("../images/Spyro Wallpaper.jpg") no-repeat center center fixed;
+                -webkit-background-size: cover;
+                -moz-background-size: cover;
+                -o-background-size: cover;
+                background-size: cover;
+        }
+
+        .crystal-container {
+                background-image: url("../images/Wood Sign 2.svg");
+                background-repeat: no-repeat;
+                background-position-x: center;
+                background-size: cover;
+                position: static;
+                max-width: 100%;
+                max-height: 100%;
+                padding: 4% 0% 4% 0%;
+                text-align: center;
+                background-color: transparent;
+                font-size: 4em;
+                object-fit: contain;
+        }
+
+         #mypic {
+                width: 100%;
+                height: auto;
+                display: block;
+                float: none;
+                }
+                
+        header {
+                width: 100%;
+        }  
+            
+        nav {
+                width: 200px;
+                float: none;
+                display: block;
+                margin: 0;
+        }
+            
+        .name {
+                width: 100vm;
+        }
+        
+}
+
+      /* Extra large devices (large laptops and desktops, 1200px and up) */
+      @media only screen and (min-width: 1200px)  and (-webkit-min-device-pixel-ratio: 1) {
+        html {
+                background: url("../images/Spyro Wallpaper.jpg") no-repeat center center fixed;
+                -webkit-background-size: cover;
+                -moz-background-size: cover;
+                -o-background-size: cover;
+                background-size: cover;
+        }
+
+         #mypic {
+                width: 100%;
+                height: auto;
+                display: block;
+                float: none;
+                }
+                
+        header {
+                width: 100%;
+        }  
+            
+        nav {
+                width: 200px;
+                float: none;
+                display: block;
+                margin: 0;
+        }
+            
+        .name {
+                width: 100vm;
+        }
+        
+}
