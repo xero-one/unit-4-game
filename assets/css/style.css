@@ -59,6 +59,13 @@ body {
         }
 
 
+        .mx-auto {
+                display: block;
+                width: auto;
+                margin: auto;
+            }
+            
+
 /*These are the blank blocks*/
 .block-sm {
         position: static;
@@ -163,6 +170,10 @@ body {
         width: 8em;
         color: gold;
         object-fit: contain;
+    }
+
+    .score {
+        text-align: center;    
     }
 
         .h3{

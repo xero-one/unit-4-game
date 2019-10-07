@@ -35,6 +35,8 @@ $(document).ready(() => {
     var totalScore = 0;
     $("totalScore").text(totalScore);
 
+    var song;
+
         function youWin() {
             wins = wins + 1;
             $("#wins").text(wins);
@@ -60,6 +62,15 @@ $(document).ready(() => {
             randomNumber = Math.floor(randomNumber) + 1;
             console.log(randomNumber);
             $("#randNum").html(randomNumber);
+        }
+
+        function setup() {
+            song = loadSound("spyro-theme-song.mp3", loaded);  
+        }
+
+        function loaded() {
+            song.loop();
+            song.setVolume(0.5);
         }
 
     $("#ruby").click(() => {
@@ -121,23 +132,6 @@ $(document).ready(() => {
             resetCharacters();
         }
     });
-
-    var song = $('#song')
-
-    result.hide().html('<%= j @song %>').fadeIn(250);
-    playAudio(song);
-    
-    function playAudio(song){
-      if (song.html() === "Yes"){
-    
-        $('#yes-audio').trigger('play')
-      }
-      else if (song.html() === "Nope."){
-        $('#no-audio').trigger('play')
-      }
-     
-    }
-
 
 /*This is the JQuery script to link element fade by scoll*/
     $(document).on("scroll", function () {
